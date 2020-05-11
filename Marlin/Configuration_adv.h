@@ -620,9 +620,6 @@
    * Settings for all BLTouch and clone probes:
    */
 
-  // Because we're using a PIN 27 board, to sneak the signal in.
-  #define SERVO0_PIN 27
-
   // Safety: The probe needs time to recognize the command.
   //         Minimum command delay (ms). Enable and increase if needed.
   #define BLTOUCH_DELAY 200 // Default: 500
@@ -1262,7 +1259,7 @@
     // The normal delay is 10µs. Use the lowest value that still gives a reliable display.
     //#define DOGM_SPI_DELAY_US 5
 
-    #define LIGHTWEIGHT_UI
+    //#define LIGHTWEIGHT_UI
     #if ENABLED(LIGHTWEIGHT_UI)
       #define STATUS_EXPIRE_SECONDS 20
     #endif
